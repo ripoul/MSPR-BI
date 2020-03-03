@@ -5,10 +5,7 @@ services:
   db:
     image: postgres
     restart: always
-    environment:
-        POSTGRES_USER: example
-        POSTGRES_PASSWORD: example
-        POSTGRES_DB: example
+    env_file: database.env
     volumes: 
       - ./pgdata:/var/lib/postgresql/data
       - ./data:/docker-entrypoint-initdb.d/
