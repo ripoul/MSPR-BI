@@ -27,7 +27,6 @@ CREATE TABLE IF NOT EXISTS dwh."client" (
 
 CREATE TABLE IF NOT EXISTS dwh."supplier" (
   "id" SERIAL PRIMARY KEY,
-  "city_id" int,
   "full_name" varchar
 );
 
