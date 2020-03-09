@@ -16,7 +16,8 @@ CREATE TABLE IF NOT EXISTS dwh."month" (
 CREATE TABLE IF NOT EXISTS dwh."year" (
   "id" SERIAL PRIMARY KEY,
   "num_year" int,
-  "month_id" int
+  "month_id" int,
+  "date" date
 );
 
 CREATE TABLE IF NOT EXISTS dwh."client" (
