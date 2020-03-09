@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS dwh."year" (
 
 CREATE TABLE IF NOT EXISTS dwh."client" (
   "id" SERIAL PRIMARY KEY,
-  "city_id" int,
+  "city" varchar,
   "full_name" varchar
 );
 
@@ -32,8 +32,7 @@ CREATE TABLE IF NOT EXISTS dwh."supplier" (
 
 CREATE TABLE IF NOT EXISTS dwh."product_category" (
   "id" SERIAL PRIMARY KEY,
-  "name" varchar,
-  "material_id" int
+  "name" varchar
 );
 
 CREATE TABLE IF NOT EXISTS dwh."product" (
